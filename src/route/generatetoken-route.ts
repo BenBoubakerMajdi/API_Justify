@@ -1,9 +1,8 @@
 import { Router } from "express"
-import { generateToken } from "../contoller" //Importing generateToken function from the index Controller
+import { generateToken } from "../contoller" // Import generateToken function
 
-//Exporting Token generator Route
+// Exporting token generator route
 export const tokenRoute = Router()
 
-//Defining Token generator Route
-tokenRoute.post("/", generateToken)
-
+// Defining token generator route
+tokenRoute.post("/", generateToken as any)

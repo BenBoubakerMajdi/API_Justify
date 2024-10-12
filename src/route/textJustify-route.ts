@@ -1,9 +1,9 @@
 import { Router } from "express"
-import { verifyToken } from "../middelware/isauthenticated-middleware"
+import { verifyToken, checkRateLimit } from "../middelware"
 import { justifyTextHandler } from "../contoller/text-justify-controller"
 
-//exporting justify Text Route
+// Exporting justify text route
 export const justifyRoute = Router()
 
-//Defining justify Text Route
-justifyRoute.post("/", verifyToken, justifyTextHandler)
+// Defining justify text route
+justifyRoute.post("/", verifyToken as any, checkRateLimit as any, justifyTextHandler)
