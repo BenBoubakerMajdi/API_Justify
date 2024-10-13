@@ -4,9 +4,11 @@ import dotenv from "dotenv/config" // Load environment variables
 import helmet from "helmet" // Import Helmet for security headers
 import { apiRouter } from "./route" // Import API routes
 import connectToDatabase from "./DBConfig/dbconfig" // Import database connection
+import swaggerUi from "swagger-ui-express" //Import of Swagger UI
+import Specs from "./utils/swagger" // Import of Swagger Configuration file
 
 // Initialize the Express application
-const app = express()
+export const app = express()
 
 // Connect to the database
 connectToDatabase()
@@ -22,6 +24,8 @@ app.use("/api", apiRouter)
 
 // Set the port from environment variable or default to 3000
 const PORT = process.env.PORT || 3000
+
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(Specs))
 
 // Start the server
 app.listen(PORT, () => {

@@ -17,7 +17,7 @@ export const checkRateLimit = async (
     return res.status(400).json({ message: "Text is required." })
   }
 
-  const wordCountInText = text.split(" ").length // Count words in the text
+  const wordCountInText = text.split(" ").filter(Boolean).length // Count words in the text
 
   try {
     const user = await User.findOne({ email }) // Find user by email

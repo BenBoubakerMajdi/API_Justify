@@ -6,3 +6,5 @@ export const tokenRoute = Router()
 
 // Defining token generator route
 tokenRoute.post("/", generateToken as any)
+
+

@@ -30,8 +30,6 @@ export const generateToken = async (req: Request, res: Response) => {
   }
 
   const existingUser = await User.findOne({ email })
-  const now = new Date()
-
   if (!existingUser) {
     const newUser = new User({
       email: email,

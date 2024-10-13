@@ -8,7 +8,7 @@ if (!URI) {
   throw new Error("DB_URI environment variable is not defined.")
 }
 
-// Function to connect to the MongoDB database
+// Connecting to the MongoDB database
 const connectToDatabase = async () => {
   try {
     await mongoose.connect(URI)
