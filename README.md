@@ -42,8 +42,3 @@ This project implements and deploys a REST API that justifies a given text. Just
 The application is deployed on a public server. Access it .
 
 
-Feel free to fork the repository and submit pull requests for any enhancements or fixes.
-
-## License
-
-This project is licensed under the MIT License.
