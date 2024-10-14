@@ -39,6 +39,6 @@ This project implements and deploys a REST API that justifies a given text. Just
 
 ## Deployment
 
-The application is deployed on a public server. Access it from here [Text Justify API.]([https://www.google.com](https://api-justify.onrender.com))
+The application is deployed on a public server. Access it from here [Text Justify API](https://api-justify.onrender.com))
 
 
