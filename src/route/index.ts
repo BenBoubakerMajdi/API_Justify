@@ -7,6 +7,7 @@ export const apiRouter = Router()
 
 //Using Token Generator Route
 apiRouter.use("/token", tokenRoute)
+
 //Using Justify Text Route
 apiRouter.use("/justify", justifyRoute)
 
