@@ -26,9 +26,9 @@ const options = {
     },
   },
   apis: [
-    "../src/route/index.ts", // Including the API route definition
-    "../src/route/*.ts", // Including all route files for API documentation
-    "../src/controller/*.ts", // Including all controller files for API documentation
+    "../../src/route/index.ts", // Including the API route definition
+    "../../src/route/*.ts", // Including all route files for API documentation
+    "../../src/controller/*.ts", // Including all controller files for API documentation
   ],
 }
 

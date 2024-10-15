@@ -8,7 +8,7 @@ const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
 const mongoose_1 = __importDefault(require("mongoose"));
 const index_1 = require("../../index");
 const User_1 = __importDefault(require("../../model/User"));
-jest.mock("../../model/User"); // Ensure you're mocking the correct path
+jest.mock("../../model/User"); //Ensure mocking the correct path
 describe("generateToken Controller", () => {
     const validEmail = "test@example.com";
     const invalidEmail = "invalidemail";

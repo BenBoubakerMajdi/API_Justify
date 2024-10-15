@@ -4,7 +4,7 @@ import mongoose from "mongoose"
 import { app } from "../../index"
 import User from "../../model/User"
 
-jest.mock("../../model/User") // Ensure you're mocking the correct path
+jest.mock("../../model/User") //Ensure mocking the correct path
 
 describe("generateToken Controller", () => {
   const validEmail = "test@example.com"
